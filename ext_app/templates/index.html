@@ -1,0 +1,79 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extempore</title>
+    <link rel = "icon" href = 
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQgpBcvnnctQliYk0JV5E6i_Hp9L-QOPrQapRIUmlIJJM2VBKXt0fJo6CDE7T9PB3Hg_E&usqp=CAU" 
+        type = "image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Bitter:400,700"
+    />
+    
+    <link rel="stylesheet"  href="{%  static  'css/style.css'  %}">
+  </head>
+
+  <body>
+    <!-- navbar starts -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Extempore</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'index' %}"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">About us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end of nav bar -->
+
+    <div class="px-4 py-4 my-2 text-center">
+      <h1 class="display ">Extempore Conversation</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+          Do you want to improve your speaking ability, but afraid to practice
+          with friends? Now you can have extempore debate with stranger without
+          hesitation..</p><p>(On start you will receive a topic on which you have to
+          discuss with partner)
+        </p>
+            
+        <a href="{% url 'link' %}"><button id="open">Get Topic and Start</button></a>
+        
+      </div>
+    </div>
+  </body>
+  <script src="{% static 'js/script.js' %}"></script>
+</html>
