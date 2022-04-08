@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'extempore.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd54ke05ml22hd6',
-        'USER': 'wycigjlpenoiui',
-        'PASSWORD': 'e49573809d8d1af62ecf5467ee2801584b055f31e2d72dcb198698c68c83f6fd',
+        'NAME': 'd1jeu9754ohatv',
+        'USER': 'tywfexbpzemnee',
+        'PASSWORD': '38c8fb24247165f37497c6831df822261e63f80a95dd97801ba58dd6445018ec',
         'HOST': 'ec2-54-157-79-121.compute-1.amazonaws.com',
         'PORT': '5432'
     }
